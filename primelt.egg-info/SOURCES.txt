@@ -1,0 +1,13 @@
+setup.py
+primelt/PRIMARSMELT_core.py
+primelt/PRIMELT3P_core.py
+primelt/_PRIMARSMELT_core.py
+primelt/__init__.py
+primelt/cli.py
+primelt/core.py
+primelt.egg-info/PKG-INFO
+primelt.egg-info/SOURCES.txt
+primelt.egg-info/dependency_links.txt
+primelt.egg-info/entry_points.txt
+primelt.egg-info/requires.txt
+primelt.egg-info/top_level.txt
