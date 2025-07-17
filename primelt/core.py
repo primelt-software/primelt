@@ -3,7 +3,7 @@ import os
 
 # Import your core calculation modules (must be in the same folder)
 from . import PRIMELT3P_core
-from . import _PRIMARSMELT_core
+from . import PRIMARSMELT_core
 
 def run_primelt3(input_file, mgo_s=None, feo_s=None, output_dir=None):
     # Set defaults if not provided
@@ -38,11 +38,11 @@ def run_primarsmelt(input_file, mgo_s=None, feo_s=None, output_dir=None):
     # Set defaults if not provided
     mgo_s = mgo_s if mgo_s is not None else 30.2
     feo_s = feo_s if feo_s is not None else 17.9
-    _PRIMARSMELT_core.config_manager.update_settings(mgo_s=mgo_s, feo_s=feo_s)
-    samples = _PRIMARSMELT_core.read_data(input_file)
-    if not _PRIMARSMELT_core.test_data(samples):
+    PRIMARSMELT_core.config_manager.update_settings(mgo_s=mgo_s, feo_s=feo_s)
+    samples = PRIMARSMELT_core.read_data(input_file)
+    if not PRIMARSMELT_core.test_data(samples):
         raise ValueError("Input data format is invalid.")
-    solution = _PRIMARSMELT_core.final_results(samples)
+    solution = PRIMARSMELT_core.final_results(samples)
     magma_afm, magma_batch = solution[1], solution[0]
 
     if output_dir and not os.path.exists(output_dir):
