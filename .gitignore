@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg
+*.egg-info/
+dist/
+build/
+.tox/
+.ipynb_checkpoints/
+.pytest_cache/
+htmlcov/
+.DS_Store # macOS
+.vscode/ # VS Code specific settings (optional, but often good to ignore)
+results/
