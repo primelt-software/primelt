@@ -7,7 +7,9 @@ setup(
     install_requires=[
         "pandas",
         "matplotlib",
-        "numpy"
+        "numpy",
+        "openpyxl",  # for Excel output
+        "scipy",  # for scientific calculations
         # add other dependencies here
     ],
     entry_points={
